@@ -32,11 +32,17 @@ const Movie = (props) => {
   };
 
   var stuffToRender = isEditable ? (
-    <NewMovie
-      onNewMovieSubmit={submitMovieHandler}
-      onBtnClick={displayBtnClickHandler}
-      newMovie={thisMovie}
-    ></NewMovie>
+    <div className="editing">
+      <NewMovie
+        onNewMovieSubmit={submitMovieHandler}
+        onBtnClick={displayBtnClickHandler}
+        newMovie={thisMovie}
+      ></NewMovie>{" "}
+      <div className="icons">
+        <DeleteIcon className="icon" onClick={deleteHandler}></DeleteIcon>
+        <EditIcon className="icon" onClick={editHandler}></EditIcon>
+      </div>
+    </div>
   ) : !isExpanded ? (
     <>
       <div className="Movie">
