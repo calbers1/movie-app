@@ -1,0 +1,54 @@
+.Filters {
+  top: 0em;
+  width: 100%;
+  background-color: var(--light-stuff);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Filters-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5em 0 5em;
+  gap: 5%;
+}
+
+TextField[type="number"] {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: var(--light-stuff) !important;
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+.Filters-button {
+  height: 100%;
+  top: 0.7em;
+}
+
+@media only screen and (max-width: 600px) {
+  .Filters-button {
+    top: 0em;
+  }
+}
