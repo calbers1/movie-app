@@ -7,7 +7,7 @@
 }
 body {
   margin: 0;
-  background-color: #1f1f2f;
+  background-color: var(--background);
   font-family: "Roboto Mono", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
